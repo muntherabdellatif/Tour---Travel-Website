@@ -1,0 +1,112 @@
+/* start global */
+* {
+  font-family: "Nunito", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: all 0.2s linear;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -ms-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+}
+:root {
+  --orange: #ffa500;
+}
+::selection {
+  background-color: var(--orange);
+  color: #fff;
+}
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 6rem;
+}
+/* end global */
+/* start header  */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #333;
+  z-index: 1000;
+  padding: 2rem 9%;
+}
+header .logo {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #fff;
+  text-transform: uppercase;
+}
+header .logo span {
+  color: var(--orange);
+}
+header nav a {
+  color: #fff;
+  font-size: 2rem;
+  margin: 0 0.8rem;
+}
+header nav a:hover {
+  color: var(--orange);
+}
+header .icon i {
+  font-size: 2.5rem;
+  color: #fff;
+  margin-right: 2rem;
+  cursor: pointer;
+}
+header .icon i:hover {
+  color: var(--orange);
+}
+header .search-bar-container {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  padding: 1.5rem 2rem;
+  background-color: #333;
+  border-top: 0.1rem solid rgba(255, 255, 255, 0.2);
+  display: flex;
+  align-items: center;
+  z-index: 1001;
+  clip-path: polygon(
+    0 0,
+    100% 0,
+    100% 0,
+    0 0
+  ); /*like over flow hidden or display none*/
+}
+header .search-bar-container.active {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); /*like display block*/
+}
+header .search-bar-container #search-bar {
+  width: 100%;
+  padding: 1rem;
+  text-transform: none;
+  color: #333;
+  font-size: 1.7rem;
+  border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+}
+header .search-bar-container label {
+  color: #fff;
+  font-size: 3rem;
+  cursor: pointer;
+  margin-left: 1.5rem;
+}
+header .search-bar-container label:hover {
+  color: var(--orange);
+}
+/* end header  */
