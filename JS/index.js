@@ -50,3 +50,50 @@ vidBtn.forEach (btn =>{
     });
 });
 // end home 
+// review section start 
+var swiper1 = new Swiper(".review-slider", {
+    loop:true,
+    spaceBetween: 20,
+    autoplay: {
+        delay : 7500,
+        disableOnInteraction:false,
+    },
+    centeredSlides:true,
+    breakpoints: {
+      640: {
+        slidesPerView: 1,
+      },
+      768: {
+        slidesPerView: 2,
+      },
+      1020: {
+        slidesPerView: 3,
+      },
+    },
+  });
+// review section end 
+// start brand section 
+var swiper2 = new Swiper(".brand-slider", {
+    loop:true,
+    spaceBetween: 20,
+    autoplay: {
+        delay : 2500,
+        disableOnInteraction:false,
+    },
+    centeredSlides:true,
+    breakpoints: {
+      450: {
+        slidesPerView: 2,
+      },
+      768: {
+        slidesPerView: 3,
+      },
+      991: {
+        slidesPerView: 4,
+      },
+      1200: {
+        slidesPerView: 5,
+      },
+    },
+  });
+// end brand section 
