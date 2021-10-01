@@ -83,17 +83,17 @@ var swiper2 = new Swiper(".brand-slider", {
     centeredSlides:true,
     breakpoints: {
       450: {
-        slidesPerView: 2,
+        slidesPerView: 1,
       },
       768: {
-        slidesPerView: 3,
+        slidesPerView: 2,
       },
       991: {
-        slidesPerView: 4,
+        slidesPerView: 3,
       },
-      1200: {
-        slidesPerView: 5,
+      1020: {
+        slidesPerView: 4,
       },
     },
   });
-// end brand section 
+// end brand section s
